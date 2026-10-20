@@ -1,6 +1,6 @@
 <?php
 
-$nav = require __DIR__ . '/../../config/navigation.php';
+$nav = require __DIR__ . '/../../../config/navigation.php';
 
 // Normalize the requested path and remove query strings.
 $currentPath = parse_url(

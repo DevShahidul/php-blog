@@ -7,11 +7,11 @@
         class="sidebar-header flex items-center gap-2 pt-8 pb-7">
         <a href="/">
             <span class="logo" :class="sidebarToggle ? 'hidden' : ''">
-                <img class="dark:hidden" src="src/images/logo/logo.svg" alt="Logo" />
-                <img class="hidden dark:block" src="src/images/logo/logo-dark.svg" alt="Logo" />
+                <img class="dark:hidden" src="<?= getHostUri(); ?>/public/src/images/logo/logo.svg" alt="Logo" />
+                <img class="hidden dark:block" src="<?= getHostUri(); ?>/public/src/images/logo/logo-dark.svg" alt="Logo" />
             </span>
 
-            <img class="logo-icon" :class="sidebarToggle ? 'lg:block' : 'hidden'" src="src/images/logo/logo-icon.svg"
+            <img class="logo-icon" :class="sidebarToggle ? 'lg:block' : 'hidden'" src="<?= getHostUri(); ?>/public/src/images/logo/logo-icon.svg"
                 alt="Logo" />
         </a>
     </div>

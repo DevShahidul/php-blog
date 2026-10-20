@@ -69,10 +69,10 @@
       <!-- Hamburger Toggle BTN -->
 
       <a href="index.html" class="xl:hidden">
-        <img class="dark:hidden" src="src/images/logo/logo.svg" alt="Logo" />
+        <img class="dark:hidden" src="<?= getHostUri(); ?>/public/src/images/logo/logo.svg" alt="Logo" />
         <img
           class="hidden dark:block"
-          src="src/images/logo/logo-dark.svg"
+          src="<?= getHostUri(); ?>/public/src/images/logo/logo-dark.svg"
           alt="Logo"
         />
       </a>
@@ -266,7 +266,7 @@
                     class="relative z-1 block h-10 w-full max-w-10 rounded-full"
                   >
                     <img
-                      src="src/images/user/user-02.jpg"
+                      src="<?= getHostUri(); ?>/public/src/images/user/user-02.jpg"
                       alt="User"
                       class="overflow-hidden rounded-full"
                     />
@@ -308,7 +308,7 @@
                     class="relative z-1 block h-10 w-full max-w-10 rounded-full"
                   >
                     <img
-                      src="src/images/user/user-03.jpg"
+                      src="<?= getHostUri(); ?>/public/src/images/user/user-03.jpg"
                       alt="User"
                       class="overflow-hidden rounded-full"
                     />
@@ -350,7 +350,7 @@
                     class="relative z-1 block h-10 w-full max-w-10 rounded-full"
                   >
                     <img
-                      src="src/images/user/user-04.jpg"
+                      src="<?= getHostUri(); ?>/public/src/images/user/user-04.jpg"
                       alt="User"
                       class="overflow-hidden rounded-full"
                     />
@@ -392,7 +392,7 @@
                     class="relative z-1 block h-10 w-full max-w-10 rounded-full"
                   >
                     <img
-                      src="src/images/user/user-05.jpg"
+                      src="<?= getHostUri(); ?>/public/src/images/user/user-05.jpg"
                       alt="User"
                       class="overflow-hidden rounded-full"
                     />
@@ -434,7 +434,7 @@
                     class="relative z-1 block h-10 w-full max-w-10 rounded-full"
                   >
                     <img
-                      src="src/images/user/user-02.jpg"
+                      src="<?= getHostUri(); ?>/public/src/images/user/user-02.jpg"
                       alt="User"
                       class="overflow-hidden rounded-full"
                     />
@@ -476,7 +476,7 @@
                     class="relative z-1 block h-10 w-full max-w-10 rounded-full"
                   >
                     <img
-                      src="src/images/user/user-03.jpg"
+                      src="<?= getHostUri(); ?>/public/src/images/user/user-03.jpg"
                       alt="User"
                       class="overflow-hidden rounded-full"
                     />
@@ -518,7 +518,7 @@
                     class="relative z-1 block h-10 w-full max-w-10 rounded-full"
                   >
                     <img
-                      src="src/images/user/user-04.jpg"
+                      src="<?= getHostUri(); ?>/public/src/images/user/user-04.jpg"
                       alt="User"
                       class="overflow-hidden rounded-full"
                     />
@@ -560,7 +560,7 @@
                     class="relative z-1 block h-10 w-full max-w-10 rounded-full"
                   >
                     <img
-                      src="src/images/user/user-05.jpg"
+                      src="<?= getHostUri(); ?>/public/src/images/user/user-05.jpg"
                       alt="User"
                       class="overflow-hidden rounded-full"
                     />
@@ -621,7 +621,7 @@
           <span
             class="mr-3 h-11 w-11 overflow-hidden rounded-full rtl:mr-0 rtl:ml-3"
           >
-            <img src="src/images/user/owner.png" alt="User" />
+            <img src="<?= getHostUri(); ?>/public/src/images/user/owner.png" alt="User" />
           </span>
 
           <span class="text-theme-sm mr-1 block font-medium rtl:mr-0 rtl:ml-1">

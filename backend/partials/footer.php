@@ -1,2 +1,0 @@
-  <script defer src="bundle.js"></script></body>
-</html>
