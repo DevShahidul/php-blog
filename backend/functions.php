@@ -1,5 +1,7 @@
 <?php
 
+require_once __DIR__ . '/config/config.php';
+
 function dd($value) {
     echo "<pre>";
     var_dump($value);
