@@ -1,49 +1,22 @@
 <?php
 
 require('functions.php');
+require('config/Database.php');
 
 
 // Connect our postgres database;
 
+$config = require('config/config.php');
 
-class Database {
-    private $host;
-    private $port;
-    private $dbname;
-    private $username;
-    private $password;
-    public $connection;
+$db = new Database($config['database']);
 
-    public function __construct() {
-        $this->host = '127.0.0.1';
-        $this->port = '5432';
-        $this->dbname = 'php_blog';
-        $this->username = 'devsh';
-        $this->password = 'Shahidul56@';
+// $id = $_GET['id'];
 
+// $query = "SELECT * FROM posts WHERE id = :id";
 
-        $dsn = "pgsql:host={$this->host};port={$this->port};dbname={$this->dbname}";
-        $this->connection = new PDO($dsn, $this->username, $this->password);
+// $post = $db->query($query, ['id' => $id])->fetch();
 
-    }
-
-    public function query($query) {
-        
-        $statement = $this->connection->prepare($query);
-
-        $statement->execute();
-
-        return $statement->fetchAll(PDO::FETCH_ASSOC);
-
-    }
-}
-
-
-$db = new Database();
-
-$post = $db->query("SELECT * FROM posts");
-
-dd($post);
+// dd($post);
 
 
 

@@ -20,6 +20,21 @@
 
         <!-- Page content will go here -->
 
+        <div class="space-y-5 sm:space-y-6">
+          <div class="rounded-2xl border border-gray-200 bg-white dark:border-gray-800 dark:bg-white/3">
+            <div class="px-5 py-4 sm:px-6 sm:py-5">
+              <h3 class="text-base font-medium text-gray-800 dark:text-white/90">
+                Basic Table 1
+              </h3>
+            </div>
+
+            <div class="p-5 border-t border-gray-100 dark:border-gray-800 sm:p-6">
+
+              <?php require(__DIR__ . '/partials/table/index.php'); ?>
+            
+            </div>
+          </div>
+        </div>
       </div>
     </main>
     <!-- ===== Main Content End ===== -->
