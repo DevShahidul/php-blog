@@ -24,7 +24,7 @@ $sql =
 
 $query = $db->query($sql);
 
-$data = $query->fetchAll();
+$data = $query->get();
 
 
 $columns = [];

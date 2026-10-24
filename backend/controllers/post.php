@@ -7,17 +7,11 @@ $db = new Database($config['database']);
 $sql = "select * from posts where id = :id";
 
 $query = $db->query($sql, ['id' => $_GET['id']]);
-$data = $query->fetch();
+$data = $query->findOrFail();
 
-if (!$data) {
-    abort();
-}
 
 $currentUserId = 12;
-
-if($data['author_id'] !== $currentUserId) {
-    abort(Response::FORBIDDEN);
-}
+authorize($data['author_id'] === $currentUserId);
 
 
 $postTitle = $data['title'] ?? 'Post Details';

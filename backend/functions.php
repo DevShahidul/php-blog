@@ -15,3 +15,11 @@ function getHostUri(): string {
     $scheme = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http';
     return $scheme . '://' . $host;
 };
+
+function authorize($condition, $code = Response::FORBIDDEN) {
+    if (!$condition) {
+        abort($code);
+    }
+
+    return true;
+}
