@@ -1,14 +1,15 @@
 <?php
 
 require('functions.php');
+require('config/Response.php');
 require('config/Database.php');
 
 
 // Connect our postgres database;
 
-$config = require('config/config.php');
+// $config = require('config/config.php');
 
-$db = new Database($config['database']);
+// $db = new Database($config['database']);
 
 // $id = $_GET['id'];
 

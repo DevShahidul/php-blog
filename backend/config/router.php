@@ -4,8 +4,8 @@ $uri = parse_url($_SERVER['REQUEST_URI'])['path'] ?? '/';
 
 $routes = [
     '/' => 'controllers/index.php',
-    '/posts/all' => 'controllers/posts.php',
-    '/posts/create' => 'controllers/posts.php',
+    '/posts' => 'controllers/posts.php',
+    '/post' => 'controllers/post.php',
 ];
 
 
@@ -18,7 +18,7 @@ function routeToController($uri, $routes) {
     }
 }
 
-function abort($code = 404) {
+function abort($code = Response::NOT_FOUND) {
     http_response_code($code);
     
     require("views/{$code}.php");

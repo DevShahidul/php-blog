@@ -33,16 +33,30 @@
                     
                        
 
-                <tr class="border-b border-gray-100 dark:border-gray-800">
+                <tr class="border-b border-gray-100 dark:border-gray-800 relative">
 
                 <?php foreach ($rows as $column => $value): ?>
 
                     <?php if($column === 'status'): ?>
                         <td class="px-5 py-4 sm:px-6">
-                        <p
-                            class="bg-success-50 text-theme-xs text-success-700 dark:bg-success-500/15 dark:text-success-500 inline-block rounded-full px-2 py-0.5 font-medium">
-                            <?= $value ?>
-                        </p>
+                            <a href="/post?id=<?= $rows['id'] ?>" class="absolute inset-0"></a>
+                            <?php if ($value === 'unpublished'): ?>
+                                 <span class="bg-error-50 text-error-600 dark:bg-error-500/15 dark:text-error-500 inline-flex items-center justify-center gap-1 rounded-full px-2.5 py-0.5 text-sm font-medium">
+                                <?= ucwords(str_replace('_', ' ', $value)); ?>
+
+                                
+                            </span>
+                            <?php elseif ($value === 'published'): ?>
+                                  <span class="bg-success-50 text-success-600 dark:bg-success-500/15 dark:text-success-500 inline-flex items-center justify-center gap-1 rounded-full px-2.5 py-0.5 text-sm font-medium">
+                                    <?= ucwords(str_replace('_', ' ', $value)); ?>
+                                </span>
+                            <?php else: ?>
+                                <span class="inline-flex items-center justify-center gap-1 rounded-full bg-gray-100 px-2.5 py-0.5 text-sm font-medium text-gray-700 dark:bg-white/5 dark:text-white/80">
+                                    <?= ucwords(str_replace('_', ' ', $value)); ?>
+                                </span>
+
+                        <?php endif; ?>
+                       
                     </td>
                     <?php else: ?>
 

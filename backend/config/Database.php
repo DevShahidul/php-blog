@@ -2,7 +2,7 @@
 class Database {
     public $connection;
 
-    public function __construct($config, $username = 'devsh', $password = 'Shahidul56@') {
+    public function __construct($config, $username = 'devsh', $password = 'Shahidul56') {
 
         $dsn = 'pgsql:' . http_build_query($config, '', ';');
         $this->connection = new PDO($dsn, $username, $password, [
