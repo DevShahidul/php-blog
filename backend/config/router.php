@@ -2,11 +2,7 @@
 
 $uri = parse_url($_SERVER['REQUEST_URI'])['path'] ?? '/';
 
-$routes = [
-    '/' => 'controllers/index.php',
-    '/posts' => 'controllers/posts.php',
-    '/post' => 'controllers/post.php',
-];
+$routes = require('routes.php');
 
 
 
