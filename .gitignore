@@ -1,12 +1,16 @@
 node_modules
 package-lock.json
-/build
 .DS_Store
 
 .env
 
 /*.env
 
+*/vendor/
+/vendor/
+*/storage
+/storage
+/build
+
 
 backend/oopclass.php
-backend/storage
