@@ -10,7 +10,7 @@
     Blank Page | TailAdmin - Tailwind CSS Admin Dashboard Template
   </title>
   <link rel="icon" href="favicon.ico">
-  <link href="<?= getHostUri(); ?>/public/style.css" rel="stylesheet">
+  <link href="<?= getHostUri(); ?>/style.css" rel="stylesheet">
 </head>
 
 <body

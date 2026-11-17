@@ -1,2 +1,2 @@
-  <script defer src="<?= getHostUri(); ?>/public/bundle.js"></script></body>
+  <script defer src="<?= getHostUri(); ?>/bundle.js"></script></body>
 </html>

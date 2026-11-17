@@ -1,4 +1,4 @@
-<?php require('partials/header.php'); ?>
+<?php require base_path('views/partials/header.php'); ?>
 
 <!-- ===== Page Wrapper Start ===== -->
     <div
@@ -8,12 +8,12 @@
       <div
   class="absolute top-0 right-0 -z-1 w-full max-w-[250px] xl:max-w-[450px] rtl:right-auto rtl:left-0 rtl:-scale-x-100"
 >
-  <img src="<?= getHostUri(); ?>/public/src/images/shape/grid-01.svg" alt="grid" />
+  <img src="<?= getHostUri(); ?>/src/images/shape/grid-01.svg" alt="grid" />
 </div>
 <div
   class="absolute bottom-0 left-0 -z-1 w-full max-w-[250px] rotate-180 xl:max-w-[450px] rtl:right-0 rtl:left-auto rtl:-scale-x-100"
 >
-  <img src="<?= getHostUri(); ?>/public/src/images/shape/grid-01.svg" alt="grid" />
+  <img src="<?= getHostUri(); ?>/src/images/shape/grid-01.svg" alt="grid" />
 </div>
 
       <!-- ===== Common Grid Shape End ===== -->
@@ -26,9 +26,9 @@
           ERROR
         </h1>
 
-        <img src="<?= getHostUri(); ?>/public/src/images/error/404.svg" alt="404" class="dark:hidden" />
+        <img src="<?= getHostUri(); ?>/src/images/error/404.svg" alt="404" class="dark:hidden" />
         <img
-          src="<?= getHostUri(); ?>/public/src/images/error/404-dark.svg"
+          src="<?= getHostUri(); ?>/src/images/error/404-dark.svg"
           alt="404"
           class="hidden dark:block"
         />
@@ -55,4 +55,4 @@
     </div>
 
     <!-- ===== Page Wrapper End ===== -->
-<?php require('partials/footer.php'); ?>
+<?php require base_path('views/partials/footer.php'); ?>
